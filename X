@@ -1,0 +1,16 @@
+return function(accesskey)
+    if not accesskey then
+        print("Not allowed: No key found")
+        return
+    end
+    
+    if accesskey == 927415902446150 then
+        return {
+            nonexpired = "PrivateKey123",
+            expired = "NotPrivateKey123"
+        }
+    else
+        print("Not allowed: Incorrect access key")
+        return
+    end
+end
